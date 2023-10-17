@@ -1,8 +1,24 @@
 <template>
     <div>
         Create a Component & Locally Import footer
-    </div>
+        <p> Lastname : {{lastName}}</p>
+  </div>
 </template>
+
+<script>
+import {bus} from '../../main'
+export default{
+    props: {
+        lastName: String,
+    },
+    created(){
+        bus.$on('changeName', (data) =>{
+         this.lastName = data;
+        });
+    }
+}
+</script>
+
 <style scoped>
 div{
     color: red;

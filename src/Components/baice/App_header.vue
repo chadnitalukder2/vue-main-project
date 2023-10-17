@@ -9,27 +9,30 @@
    </div> -->
    <div>
     <p>Firstname : {{ firstName }}</p>
-    <p>Lastname : {{ lastName }}</p>
-    <p>Age : {{ age }}</p>
+    <!-- <p>Lastname : {{ lastName }}</p>
+    <p>Age : {{ age }}</p> -->
+
     <button @click="updateName">Click me</button>
+    <hr>
    </div>
 </template>
 
 <script>
+import {bus} from '../../main '
 export default{
     props: {
      /* myStudents: {
         type: Array
       }*/
       firstName: String,
-      lastName: String,
-      age: Number
+    //   lastName: String,
+    //   age: Number
     },
     methods: {
         updateName(){
            // this.firstName = "Chadni";
-           this.$emit('updateValue', 'Chadni')
-
+          // this.$emit('updateValue', 'Chadni')
+            bus.$emit('changeName', 'Chadni');
         }
     }
 }

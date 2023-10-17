@@ -1,14 +1,17 @@
 <template>
   <div>
     <!-- :myStudents="students" -->
+    <!-- :lastName = "lName"
+    :age = "myAge"
+    @updateValue = "fName = $event" -->
     <app-header 
     :firstName = "fName"
-    :lastName = "lName"
-    :age = "myAge"
-    @updateValue = "fName = $event"
-    
+  
+     
     ></app-header>
-    <comFooter></comFooter>
+    <comFooter
+    :lastName ="lName"
+    ></comFooter>
 </div>
 </template>
 
@@ -20,8 +23,8 @@ export default {
     return{
      
       fName: "Puja",
-      lName: "Dash",
-      myAge: 20
+      lName: "Talukder",
+      //myAge: 20
     }
   },
   components:{ 
