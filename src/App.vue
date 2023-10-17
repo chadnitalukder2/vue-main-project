@@ -1,6 +1,6 @@
 <template>
   <div>
-    <comHeader></comHeader>
+    <app-header></app-header>
     <comFooter></comFooter>
     <p>{{age}}</p>
   <p>{{name}}</p>
@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import comHeader from './Components/baice/App_header';
 import comFooter from './Components/baice/App_footer';
 
 export default {
@@ -19,7 +18,6 @@ export default {
     }
   },
   components:{ 
-    comHeader,
     comFooter
   }
   }

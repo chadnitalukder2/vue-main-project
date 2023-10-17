@@ -1,5 +1,5 @@
 <template>
     <div>
-      new  header
+        Globally Import a Component  header
     </div>
 </template>
