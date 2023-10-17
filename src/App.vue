@@ -1,6 +1,13 @@
 <template>
   <div>
-    <app-header :myStudents="students"></app-header>
+    <!-- :myStudents="students" -->
+    <app-header 
+    :firstName = "fName"
+    :lastName = "lName"
+    :age = "myAge"
+    @updateValue = "fName = $event"
+    
+    ></app-header>
     <comFooter></comFooter>
 </div>
 </template>
@@ -11,7 +18,10 @@ import comFooter from './Components/baice/App_footer';
 export default {
   data(){
     return{
-      students: ["nitesh", "puja", "asha", "prem"]
+     
+      fName: "Puja",
+      lName: "Dash",
+      myAge: 20
     }
   },
   components:{ 
