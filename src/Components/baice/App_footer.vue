@@ -1,11 +1,11 @@
-<template>
+<!-- <template>
     <div>
         Create a Component & Locally Import footer
         <p> Lastname : {{lastName}}</p>
   </div>
-</template>
+</template> -->
 
-<script>
+<!-- <script>
 import {bus} from '../../main'
 export default{
     props: {
@@ -13,13 +13,15 @@ export default{
     },
     created(){
         bus.$on('changeName', (data) =>{
-         this.lastName = data;
+            //console.log(data);
+            // eslint-disable-next-line vue/no-mutating-props
+            this.lastName = data;
         });
     }
 }
-</script>
+</script> -->
 
-<style scoped>
+<!-- <style scoped> -->
 div{
     color: red;
 }

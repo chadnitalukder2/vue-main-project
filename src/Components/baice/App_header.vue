@@ -1,4 +1,4 @@
-<template>
+<!-- <template> -->
     <!-- <div>
         Globally Import a Component  header
         <ul>
@@ -7,18 +7,18 @@
             </li>
         </ul>
    </div> -->
-   <div>
-    <p>Firstname : {{ firstName }}</p>
+   <!-- <div>
+    <p>Firstname : {{ firstName }}</p> -->
     <!-- <p>Lastname : {{ lastName }}</p>
     <p>Age : {{ age }}</p> -->
 
-    <button @click="updateName">Click me</button>
+    <!-- <button @click="updateName">Click me</button>
     <hr>
    </div>
-</template>
+</template> -->
 
-<script>
-import {bus} from '../../main '
+<!-- <script>
+import {bus} from '../../main'
 export default{
     props: {
      /* myStudents: {
@@ -36,9 +36,9 @@ export default{
         }
     }
 }
-</script>
+</script> -->
 
-<style scoped>
+<!-- <style scoped> -->
 div{
     color: blue;
 }
