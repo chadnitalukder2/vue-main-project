@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div>
+    <comHeader></comHeader>
+    <comFooter></comFooter>
+    <p>{{age}}</p>
+  <p>{{name}}</p>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import comHeader from './Components/baice/App_header';
+import comFooter from './Components/baice/App_footer';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      name: "Puja",
+      age: 21
+    }
+  },
+  components:{ 
+    comHeader,
+    comFooter
   }
-}
+  }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
