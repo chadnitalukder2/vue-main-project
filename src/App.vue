@@ -24,5 +24,9 @@ export default {
 </script>
 
 <style>
-
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
 </style>
+
